@@ -1,0 +1,289 @@
+@import "./normalize.css";
+
+@font-face {
+    font-family: "bignoodletitling";
+    src: url("../fonts/bignoodletitling/big_noodle_titling.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("../fonts/3955.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("../fonts/3966.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto Thin";
+    src: url("../fonts/3967.ttf") format("truetype");
+}
+
+@mixin separator {
+    content: "";
+    display: block;
+    width: 153px;
+    height: 2px;
+    background-color: #f4511e;
+    margin: 0 auto;
+}
+
+
+
+$background-color: #f8f6f6;
+
+$font-family: "bignoodletitling";
+
+$color: #d6d5d5; 
+
+$color1: #3d3d3d;
+
+$text-shadow: black 0 0 3px;
+
+
+
+p, h1, ul, nav {
+	margin: 0;
+	padding-right: 0;
+}
+
+ul {
+	padding: 0;
+}
+
+body {
+	font-family: "Roboto Bold";
+    font-size: 16px;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: $background-color;
+}
+
+.container {
+    max-width: 1046px;
+    box-sizing: border-box;
+    padding: 0 21px;
+    margin: 0 auto;
+}
+
+/*header*/
+
+header { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 144px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    
+
+    .logo {
+        align-items: center;
+	    margin: -4px;
+    }
+    nav {
+        max-width: 655px;
+        width: 100%;
+        margin: -47px;
+        padding-top: 15px;
+    }
+
+    ul { 
+        display: flex;
+        height: 100%;
+        list-style-type: none;
+    }
+     a {
+        text-decoration: none;
+        font-family: "Roboto Bold";
+        color: #8d8c8c;
+        font-size: 20.35px;  
+        padding: 0 14px;
+        padding-top: 6px;
+     }
+     a:hover{
+        color: #f6744b;
+        } 
+    }
+
+
+/*slider first*/
+
+.slider {
+    max-width: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 144px;
+
+    .slider1 {
+    position: relative;
+    }
+
+    .slide {
+        position: relative;
+        border: none;
+    }
+
+    img {
+        width: 100%;
+        height: 706px;
+    }
+
+    h1 {
+    position: fixed;
+    font-family: $font-family;
+    letter-spacing: 0.15em;
+    font-size: 72px;
+    margin-left: -99999px; 
+    }
+
+    h2 {
+    font-family: $font-family;
+    letter-spacing: 0.15em;
+    font-size: 72px;
+    width: 960px;
+    font-weight: 300;
+    text-shadow: $text-shadow;
+    position: absolute;
+    top: 35.5%;
+    left: 50%;
+    margin-left: -465px;  
+    color: $color;
+    z-index: 10;
+    }
+
+    .creative {
+    font-family: $font-family;
+    letter-spacing: 0.1em;
+    font-size: 36px;
+    text-shadow: $text-shadow;
+    position: absolute;
+    top: 55.5%;
+    left: 50%;
+    margin-left: -178px;  
+    color: $color;    
+    }
+
+    .slick-prev {
+        left: 150px;
+        z-index: 99;
+    }
+    
+
+    .slick-prev::before {
+        content: url("../img/leftarrow.png");
+        display: block;
+        position: absolute;
+        width: 26px;
+        height: 44px;  
+    }
+    .slick-prev:hover:before {
+        content: url("../img/leftarrow1.png") ; 
+        } 
+
+    .slick-next {
+        right: 150px;
+    }
+
+    .slick-next::before {
+        content: url("../img/rightarrow.png") ; 
+        display: block; 
+        position: absolute; 
+        width: 26px;
+        height: 44px;
+        z-index: 99;
+    }
+    .slick-next:hover:before {
+        content: url("../img/rightarrow2.png") ; 
+        } 
+}
+
+/*about us*/
+
+.aboutus {
+    background-color: #fff;
+    max-height: 569px;
+    height: 100%;
+
+    .container {
+        display: grid;
+        grid-template: 255px 1fr / 1fr 1fr 1fr;
+        grid-column-gap: 22px;
+
+        h3 {
+            font-family: $font-family;
+            letter-spacing: 0.1em;
+            font-size: 48px;
+            font-weight: 300;
+            color: $color1;
+        }    
+            
+        h3::after {
+            @include separator;
+            margin-top: 10px;
+        }
+                
+        p {
+            max-width: 570px;
+            font-size: 14px;
+            letter-spacing: 0;
+            font-family: "Roboto Thin";
+            text-align: center;
+            color: #696969;
+        }
+    
+        div:nth-child(1) {
+             grid-column: 1 / 4;
+        }
+        
+         div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .about {
+            display:flex;
+            justify-content: center;
+       }
+    }
+}
+   
+   
+
+    .block {
+        display:flex;
+        justify-content: center;
+        height: 195px;
+        background-color: #ebebeb;
+        
+        
+        h5 {
+            font-family: "Roboto Bold"; 
+            letter-spacing: 0.025em;
+            font-size: 17.7px;
+            font-weight: 300;
+            color: $color1;
+            
+            
+        }
+        p {
+            font-size: 14px;
+            font-family: "Roboto Thin";
+            text-align: center;
+            color: #696969;
+           
+        }
+    }
+  
+
+
+
