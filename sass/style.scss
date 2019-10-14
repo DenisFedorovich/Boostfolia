@@ -244,10 +244,24 @@ header {
              grid-column: 1 / 4;
         }
         
-         div {
+        div {
             display: flex;
             flex-direction: column;
             align-items: center;
+            box-sizing: border-box;;
+            padding: 20px 30px 20px;
+        }
+
+        img {
+            margin-bottom: 5px;
+        }
+        
+        h5 {
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: -15px;
         }
 
         .about {

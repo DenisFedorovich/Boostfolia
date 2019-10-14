@@ -202,6 +202,17 @@ header a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
+  padding: 20px 30px 20px;
+}
+.aboutus .container img {
+  margin-bottom: 5px;
+}
+.aboutus .container h5 {
+  margin-bottom: 30px;
+}
+.aboutus .container p {
+  margin-bottom: -15px;
 }
 .aboutus .container .about {
   display: flex;
