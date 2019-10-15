@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: "Roboto Regular";
-    src: url("../fonts/3966.ttf") format("truetype");
+    src: url("../fonts/3966.ttf") format("trSuetype");
 }
 
 @font-face {
@@ -84,11 +84,11 @@ header {
         height: 100%;
     }
     
-
     .logo {
         align-items: center;
 	    margin: -4px;
     }
+
     nav {
         max-width: 655px;
         width: 100%;
@@ -101,31 +101,27 @@ header {
         height: 100%;
         list-style-type: none;
     }
-     a {
+
+    a {
         text-decoration: none;
         font-family: "Roboto Bold";
         color: #8d8c8c;
         font-size: 20.35px;  
         padding: 0 14px;
         padding-top: 6px;
-     }
-     a:hover{
-        color: #f6744b;
-        } 
     }
 
+     a:hover {
+        color: #f6744b;
+    }
+
+}
 
 /*slider first*/
 
 .slider {
-    max-width: auto;
     width: 100%;
-    margin: 0 auto;
     padding-top: 144px;
-
-    .slider1 {
-    position: relative;
-    }
 
     .slide {
         position: relative;
@@ -177,7 +173,6 @@ header {
         z-index: 99;
     }
     
-
     .slick-prev::before {
         content: url("../img/leftarrow.png");
         display: block;
@@ -185,25 +180,28 @@ header {
         width: 26px;
         height: 44px;  
     }
+
     .slick-prev:hover:before {
-        content: url("../img/leftarrow1.png") ; 
-        } 
+        content: url("../img/leftarrow1.png"); 
+    } 
 
     .slick-next {
         right: 150px;
     }
 
     .slick-next::before {
-        content: url("../img/rightarrow.png") ; 
+        content: url("../img/rightarrow.png"); 
         display: block; 
         position: absolute; 
         width: 26px;
         height: 44px;
         z-index: 99;
     }
+
     .slick-next:hover:before {
-        content: url("../img/rightarrow2.png") ; 
-        } 
+        content: url("../img/rightarrow2.png"); 
+    }
+
 }
 
 /*about us*/
@@ -241,7 +239,7 @@ header {
         }
     
         div:nth-child(1) {
-             grid-column: 1 / 4;
+            grid-column: 1 / 4;
         }
         
         div {
@@ -267,7 +265,7 @@ header {
         .about {
             display:flex;
             justify-content: center;
-       }
+        }
     }
 }
    
@@ -297,7 +295,3 @@ header {
            
         }
     }
-  
-
-
-
