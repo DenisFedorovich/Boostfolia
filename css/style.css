@@ -112,7 +112,7 @@ header a:hover {
   position: absolute;
   bottom: 45px;
   left: 50%;
-  margin-left: -41px;
+  transform: translateX(-50%);
   z-index: 99;
 }
 .slider .slide {
@@ -140,7 +140,7 @@ header a:hover {
   position: absolute;
   top: 43.5%;
   left: 50%;
-  margin-left: -465px;
+  transform: translateX(-50%);
   color: #d6d5d5;
   z-index: 10;
 }
@@ -152,7 +152,7 @@ header a:hover {
   position: absolute;
   top: 55.5%;
   left: 50%;
-  margin-left: -178px;
+  transform: translateX(-50%);
   color: #d6d5d5;
 }
 .slider .slick-prev {
@@ -187,8 +187,9 @@ header a:hover {
 /*about us*/
 .aboutus {
   background-color: #fff;
-  padding-top: 84px;
-  padding-bottom: 115px;
+}
+.aboutus .container {
+  padding: 84px 0 115px;
 }
 .aboutus .container h3 {
   font-family: "bignoodletitling";
@@ -196,9 +197,8 @@ header a:hover {
   font-size: 48px;
   font-weight: 300;
   color: #3d3d3d;
-  margin: 0 auto;
   text-align: center;
-  vertical-align: center;
+  margin: 0 auto 20px;
 }
 .aboutus .container h3::after {
   content: "";
@@ -216,28 +216,26 @@ header a:hover {
   font-family: "Roboto Thin";
   text-align: center;
   color: #696969;
-  margin: 0 auto;
-  padding-top: 20px;
+  margin: 0 auto 52px;
 }
 .aboutus .container .block {
   display: grid;
   grid-template: 195px/1fr 1fr 1fr;
   grid-column-gap: 22px;
-  margin-top: 52px;
 }
 .aboutus .container .block div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-sizing: border-box;
   background-color: #ebebeb;
+  padding-top: 27px;
 }
 .aboutus .container .block div:hover {
   transform: scale(1.05, 1.05);
   transition-duration: 0.5s;
 }
 .aboutus .container .block img {
-  margin-top: 27px;
+  margin-bottom: 20px;
 }
 .aboutus .container .block img:hover {
   transform: scale(1.5);
@@ -249,8 +247,8 @@ header a:hover {
   font-size: 18px;
   font-weight: 300;
   color: #3d3d3d;
-  margin-top: 20px;
   color: #746b6b;
+  margin-bottom: 12px;
 }
 .aboutus .container .block p {
   font-size: 14px;
@@ -259,52 +257,46 @@ header a:hover {
   text-align: center;
   color: #707070;
   max-width: 250px;
-  margin-top: 12px;
 }
 
 /*video*/
 .videomain {
   max-width: 100%;
   background: url(../img/video.png);
-}
-.videomain .videogrid {
   display: grid;
   grid-template: 430px/1fr 1fr;
 }
-.videomain .videogrid .videoblock {
+.videomain .videoblock {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-sizing: border-box;
   background-color: #171f23;
+  padding-top: 124px;
 }
-.videomain .videogrid .videoblock h4 {
+.videomain .videoblock h4 {
   font-family: "Roboto Bold";
   font-size: 30px;
   font-weight: 300;
-  color: #3d3d3d;
   color: #e7e7e7;
-  margin-top: 124px;
+  margin-bottom: 25px;
 }
-.videomain .videogrid .videoblock p {
+.videomain .videoblock p {
   font-size: 14px;
   font-family: "Roboto Thin";
   text-align: center;
   color: #696969;
   max-width: 450px;
-  margin-top: 25px;
+  margin-bottom: 25px;
 }
-.videomain .videogrid .videoblock .buttonvideo {
-  position: absolute;
+.videomain .videoblock .buttonvideo {
   width: 127px;
   height: 35px;
   border: transparent;
   border-bottom: 2px solid #b11000;
   background-color: #e84c3d;
   margin: 0 auto;
-  margin-top: 290px;
 }
-.videomain .videogrid .videoblock .buttonvideo a {
+.videomain .videoblock .buttonvideo a {
   font-family: "Roboto Bold";
   font-size: 14px;
   text-decoration: none;
@@ -317,16 +309,16 @@ header a:hover {
 .ourworks {
   max-width: 100%;
 }
+.ourworks .container {
+  padding: 69px 0 66px;
+}
 .ourworks .container h3 {
   font-family: "bignoodletitling";
   letter-spacing: 0.1em;
   font-size: 48px;
   font-weight: 300;
   color: #3d3d3d;
-  margin: 0 auto;
   text-align: center;
-  vertical-align: center;
-  padding-top: 69px;
   margin-bottom: 22px;
 }
 .ourworks .container h3::after {
@@ -346,17 +338,17 @@ header a:hover {
   color: #707070;
   max-width: 550px;
   margin: 0 auto;
-  margin-top: 12px;
 }
-.ourworks .filter-button {
+.ourworks .buttons-block {
+  margin-bottom: 22px;
+}
+.ourworks .buttons-block .filter-button {
   font-family: "Roboto Light";
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.1em;
   color: #3d3d3d;
   padding: 7px 13px;
-  margin-top: 66px;
-  margin-bottom: 22px;
 }
 .ourworks .filter-button:hover {
   font-family: "Roboto Bold";
@@ -402,8 +394,7 @@ header a:hover {
   align-items: center;
   justify-content: center;
   background: #1c1c1c;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding: 75px 0;
 }
 .slider2 .slider-theme {
   width: 683px;
@@ -445,6 +436,7 @@ header a:hover {
 /*who we are*/
 .whoweare .container {
   padding-top: 69px;
+  padding-bottom: 104px;
 }
 .whoweare .container h3 {
   font-family: "bignoodletitling";
@@ -480,6 +472,9 @@ header a:hover {
   grid-template: 438px/4fr 8fr;
   grid-column-gap: 22px;
 }
+.whoweare .container .slider-workers .slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
 .whoweare .container .slider-workers .slider-workers1 {
   width: 320px;
   background: #ebebeb;
@@ -514,6 +509,34 @@ header a:hover {
 }
 .whoweare .container .slider-workers .slider-workers1 .designerslinks a {
   margin-right: 7px;
+}
+.whoweare .container .slider-workers .slider-workers1 .slick-dots {
+  background: #ebebeb;
+  bottom: 80px;
+}
+.whoweare .container .slider-workers .slider-workers1 .slick-dots li {
+  width: 8px;
+  height: 8px;
+  margin: 4px;
+  margin-right: 7px;
+}
+.whoweare .container .slider-workers .slider-workers1 .slick-dots li button {
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+}
+.whoweare .container .slider-workers .slider-workers1 .slick-dots li button:before {
+  content: " ";
+  width: 8px;
+  height: 8px;
+  padding: 0px;
+}
+.whoweare .container .slider-workers .slider-workers1 .slick-dots li.slick-active button {
+  border: 1px solid transparent;
+  background-color: #8e8181;
 }
 .whoweare .container .slider-workers .slider-skills {
   width: 660px;
@@ -615,7 +638,9 @@ header a:hover {
 .features {
   width: 100%;
   background: #171f23;
-  padding-bottom: 47px;
+}
+.features .container {
+  padding: 53px 0 47px;
 }
 .features .container h3 {
   font-family: "Roboto Condensed";
@@ -623,9 +648,8 @@ header a:hover {
   font-size: 36px;
   font-weight: 300;
   color: #f6f6f6;
-  margin: 0 auto;
   text-align: center;
-  padding-top: 53px;
+  margin-bottom: 20px;
 }
 .features .container h3::after {
   content: "";
@@ -640,14 +664,13 @@ header a:hover {
   display: grid;
   grid-template: 210px/3fr 3fr 3fr 3fr;
   grid-column-gap: 22px;
-  margin-top: 20px;
 }
 .features .container .block3 div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-sizing: border-box;
   background-color: #171f23;
+  padding-top: 27px;
 }
 .features .container .block3 div:hover {
   transform: scale(1.05, 1.05);
@@ -658,14 +681,14 @@ header a:hover {
   color: #ff7062;
 }
 .features .container .block3 img {
-  margin-top: 27px;
+  margin-bottom: 27px;
 }
 .features .container .block3 h6 {
   font-family: "Roboto Light";
   font-size: 18px;
   font-weight: 300;
-  padding-top: 27px;
   color: #f6f6f6;
+  margin-bottom: 8px;
 }
 .features .container .block3 p {
   font-size: 48px;
@@ -673,13 +696,15 @@ header a:hover {
   text-align: center;
   color: #f6f6f6;
   max-width: 250px;
-  padding-top: 8px;
 }
 
 /*blogposts*/
 .blogpost {
   max-width: 100%;
-  height: 796px;
+  padding-bottom: 113px;
+}
+.blogpost .container {
+  padding: 65px 0;
 }
 .blogpost .container h3 {
   font-family: "bignoodletitling";
@@ -690,7 +715,6 @@ header a:hover {
   margin: 0 auto;
   text-align: center;
   vertical-align: center;
-  padding-top: 65px;
   margin-bottom: 22px;
 }
 .blogpost .container h3::after {
@@ -710,7 +734,6 @@ header a:hover {
   color: #707070;
   max-width: 550px;
   margin: 0 auto;
-  margin-top: 12px;
 }
 .blogpost .row {
   width: 1004px;
@@ -719,22 +742,21 @@ header a:hover {
   box-sizing: border-box;
   justify-content: space-between;
   margin: 0 auto;
-  padding-top: 75px;
 }
 .blogpost .card {
   width: 321px;
   border-radius: 0;
 }
-.blogpost .card-img {
+.blogpost .card .card-img {
   overflow: hidden;
   border-radius: 0;
   position: relative;
 }
-.blogpost .card-img a {
+.blogpost .card .card-img a {
   width: 100%;
   height: 100%;
 }
-.blogpost .card-img .button-link {
+.blogpost .card .card-img .button-link {
   display: none;
   background-color: #e87e5d;
   border-radius: 50%;
@@ -747,7 +769,7 @@ header a:hover {
   left: 35%;
   transform: translateY(-50%);
 }
-.blogpost .card-img .button-link:after {
+.blogpost .card .card-img .button-link:after {
   content: url(../img/btn-link.png);
   width: 21px;
   height: 21px;
@@ -756,7 +778,7 @@ header a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.blogpost .card-img .button-view {
+.blogpost .card .card-img .button-view {
   display: none;
   background-color: #f6e5e0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -770,7 +792,7 @@ header a:hover {
   right: 35%;
   transform: translateY(-50%);
 }
-.blogpost .card-img .button-view:after {
+.blogpost .card .card-img .button-view:after {
   content: "";
   width: 24px;
   height: 15px;
@@ -781,25 +803,28 @@ header a:hover {
   background: url(../img/button-view.png) center no-repeat;
   background-size: contain;
 }
-.blogpost .card-img:hover img {
+.blogpost .card .card-img:hover img {
   filter: blur(4px);
 }
-.blogpost .card-img:hover .button-link {
+.blogpost .card .card-img:hover .button-link {
   display: block;
 }
-.blogpost .card-img:hover .button-view {
+.blogpost .card .card-img:hover .button-view {
   display: block;
 }
-.blogpost h6 {
+.blogpost .card-body {
+  background: #ebebeb;
+  padding-top: 35px;
+}
+.blogpost .card-body h6 {
   font-family: "Roboto Light";
   letter-spacing: 0.1em;
   font-size: 18px;
   font-weight: 300;
-  padding-top: 27px;
   color: #505050;
-  padding-top: 14px;
+  margin-bottom: 21px;
 }
-.blogpost p {
+.blogpost .card-body p {
   font-size: 14px;
   font-family: "Roboto Thin";
   letter-spacing: 0.025em;
@@ -807,10 +832,6 @@ header a:hover {
   text-align: start;
   color: #707070;
   max-width: 250px;
-  margin: 26px 0px 0px 6px;
-}
-.blogpost .card-body {
-  background: #ebebeb;
 }
 .blogpost .card-footer {
   background: #ebebeb;
@@ -818,29 +839,28 @@ header a:hover {
   display: flex;
   justify-content: space-between;
 }
-.blogpost time {
+.blogpost .card-footer time {
   font-family: "Roboto Condensed";
   font-size: 10px;
   letter-spacing: 0.1em;
   color: #8a8989;
-  padding-left: 5px;
+  margin-left: 5px;
 }
-.blogpost span {
+.blogpost .card-footer span {
   font-family: "Roboto Condensed";
   font-size: 10px;
   letter-spacing: 0.1em;
   color: #8a8989;
-  padding-left: 5px;
+  margin-left: 5px;
 }
 
 /*choseplan*/
 .choseplan {
   width: 100%;
   background: #171f23;
-  padding-bottom: 94px;
 }
 .choseplan .container {
-  width: 1004px;
+  padding: 53px 0 94px;
 }
 .choseplan .container h3 {
   font-family: "Roboto Condensed";
@@ -850,7 +870,7 @@ header a:hover {
   color: #f6f6f6;
   margin: 0 auto;
   text-align: center;
-  padding-top: 53px;
+  margin-bottom: 53px;
 }
 .choseplan .container h3::after {
   content: "";
@@ -865,83 +885,77 @@ header a:hover {
   display: grid;
   grid-template: 450px/3fr 3fr 3fr 3fr;
   grid-column-gap: 3px;
-  padding-top: 53px;
 }
 .choseplan .container .block5 div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-sizing: border-box;
 }
 .choseplan .container .block5 .colorblock .colortop {
   width: 100%;
   background: #0e1316;
+  padding-top: 40px;
+  padding-bottom: 22px;
+}
+.choseplan .container .block5 .colorblock .colortop h6 {
+  font-family: "Roboto Bold";
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  color: #f6f6f6;
+}
+.choseplan .container .block5 .colorblock .colortop p {
+  font-size: 36px;
+  font-family: "Roboto Light";
+  text-align: center;
+  color: #f6f6f6;
 }
 .choseplan .container .block5 .colorblock .colorbottom {
   width: 100%;
   height: 100%;
   background: #1f282c;
-}
-.choseplan .container .block5 .colorblock:hover {
-  transform: scale(1.05, 1.05);
-  transition-duration: 0.5s;
-  border: solid 1px #ff7062;
-}
-.choseplan .container .block5 .colorblock:hover b {
-  color: #ff7062;
-}
-.choseplan .container .block5 h6 {
-  font-family: "Roboto Bold";
-  font-size: 14px;
-  letter-spacing: 0.1em;
-  font-weight: 300;
-  padding-top: 40px;
-  color: #f6f6f6;
-}
-.choseplan .container .block5 p {
-  font-size: 36px;
-  font-family: "Roboto Light";
-  text-align: center;
-  color: #f6f6f6;
-  margin-top: -7px;
-  padding-bottom: 22px;
-}
-.choseplan .container .block5 ul {
-  list-style-type: none;
   padding: 25px;
 }
-.choseplan .container .block5 li {
+.choseplan .container .block5 .colorblock .colorbottom ul {
+  list-style-type: none;
+  margin-bottom: 75px;
+}
+.choseplan .container .block5 .colorblock .colorbottom li {
   font-size: 14px;
   font-family: "Roboto Regular";
   text-align: center;
   color: #f6f6f6;
-  padding-top: 16px;
+  margin-top: 16px;
 }
-.choseplan .container .block5 .buttonplan {
-  position: absolute;
+.choseplan .container .block5 .colorblock .colorbottom .buttonplan {
   width: 127px;
   height: 35px;
   border: transparent;
   border-radius: 3px;
   background-color: #f6744b;
   margin: 0 auto;
-  margin-top: 243px;
 }
-.choseplan .container .block5 .buttonplan a {
+.choseplan .container .block5 .colorblock .colorbottom .buttonplan a {
   width: 100%;
   height: 100%;
-}
-.choseplan .container .block5 .buttonplan:hover {
-  transform: scale(1.05, 1.05);
-  transition-duration: 0.5s;
-}
-.choseplan .container .block5 .buttonplan a {
   font-family: "Roboto Bold";
   font-size: 14px;
   text-decoration: none;
   text-align: center;
   color: #ebebeb;
   height: 100%;
+}
+.choseplan .container .block5 .colorblock .colorbottom .buttonplan:hover {
+  transform: scale(1.02, 1.02);
+  transition-duration: 0.2s;
+}
+.choseplan .container .block5 .colorblock:hover {
+  transform: scale(1.02, 1.02);
+  transition-duration: 0.3s;
+  border: solid 1px #ff7062;
+}
+.choseplan .container .block5 .colorblock:hover b {
+  color: #ff7062;
 }
 
 /*get in touch*/
@@ -1026,16 +1040,90 @@ header a:hover {
 /*locate*/
 .locate {
   width: 100%;
-  background: #171f23;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background: #0c1215;
+  font-family: "Roboto Bold";
+  font-size: 24px;
 }
-.locate h4 {
-  font-family: "Bold Condensed";
+.locate .accordion {
+  font-family: "Roboto Condensed";
   font-size: 24px;
   letter-spacing: 0.1em;
-  text-align: center;
+  background-color: #0c1215;
   color: #fff;
+  cursor: pointer;
+  padding: 16px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  transition: 0.5s;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+.locate iframe {
+  width: 800px;
+  height: 600px;
+  border: solid 1px gray;
+}
+.locate .active, .locate .accordion:hover {
+  background-color: #1f282c;
+}
+.locate .accordion:after {
+  content: url("../img/arrowdown.png");
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  float: center;
+  margin-left: 5px;
+}
+.locate .active:after {
+  content: url("../img/arrowtop.png");
+}
+.locate .panel {
+  padding: 0 18px;
+  color: #212121;
+  background-color: #fff;
+  text-align: center;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.locate p {
+  padding-right: 22px;
+}
+
+.footer {
+  width: 100%;
+  background: #171f23;
+}
+.footer .container {
+  padding: 53px 0 94px;
+}
+.footer .container h3 {
+  font-family: "bignoodletitling";
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.footer .container p {
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.footer .container .sociallinks {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: space-between;
+  margin-bottom: 4px;
+}
+.footer .container .sociallinks a {
+  margin-right: 7px;
 }
 
 /*# sourceMappingURL=style.css.map */
