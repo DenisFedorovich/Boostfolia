@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -24,11 +24,11 @@
             </a>
             <nav class="menu">
                 <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Our works</a></li>
-                    <li><a href="#">Some features</a></li>
-                    <li><a href="#">Blog posts</a></li>
-                    <li><a href="#">Get in touch</a></li>
+                    <li><a href="#aboutus">About us</a></li>
+                    <li><a href="#ourworks">Our works</a></li>
+                    <li><a href="#somefeatures">Some features</a></li>
+                    <li><a href="#blogposts">Blog posts</a></li>
+                    <li><a href="#getintouch">Get in touch</a></li>
                 </ul>
             </nav>
         </div>
@@ -66,7 +66,7 @@
             </div>
         </section>
 
-        <section class="aboutus">
+        <section class="aboutus" id="aboutus">
             <div class="container">
                 <h3>ABOUT US</h3>
                 <p class="aboutus1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -104,7 +104,7 @@
                 </div>
         </section>
 
-        <section class="ourworks">
+        <section class="ourworks" id="ourworks">
             <div class="container">
                 <h3>OUR WORKS</h3>
                 <p class="ourworks1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -342,7 +342,7 @@
             </div>
         </section>
 
-        <section class="features">
+        <section class="features" id="somefeatures">
             <div class="container">
                 <h3>SOME FEATURES</h3>
 
@@ -371,7 +371,7 @@
             </div>
         </section>
 
-        <section class="blogpost">
+        <section class="blogpost" id="blogposts" >
             <div class="container">
                 <h3>BLOG POSTS</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
@@ -534,32 +534,31 @@
             </div>
         </section>
 
-        <section class="form">
-            <div class="container">
-                <h3>GET IN TOUCH</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam</p>
-                <div class="row justify-content-between">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 form">
-                        <form action="#" method="POST">
-                            <div class="form-inline justify-content-between">
-                                <div class="col-lg-5 form-group">
-                                    <input class="form-control" type="text" placeholder="NAME">
-                                </div>
-                                <div class="col-lg-5 form-group">
-                                    <input class="form-control" type="email" placeholder="MAIL">
-                                </div>
+        <section class="form" id="getintouch">
+                <div class="container">
+                    <h3>GET IN TOUCH</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    <form class="row col-lg-12 col-md-12 col-sm-12 col-12 justify-content-between form" action="https://formspree.io/denis_greben1991@mail.ru" method="POST">
+                        <div class="form-inline justify-content-center">
+                            <div class="col-lg-5 form-group name">
+                                <label for="name">NAME</label>
+                                <input class="form-control" type="text" id="name">
                             </div>
-                            <div class="form-group textarea message">
-                                <textarea class="form-control" placeholder="MESSAGE"></textarea>
+                            <div class="col-lg-5 form-group mail">
+                                <label for="mail">MAIL</label>
+                                <input class="form-control" type="email" id="mail">
+                            </div>
+                            <div class="col-lg-10 form-group textarea">
+                                <label for="message">MESSAGE</label>
+                                <textarea class="form-control" id="message"></textarea>
                             </div>
                             <div class="form-group">
                                 <button type="submit">SEND MESSAGE</button>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
-            </div>
         </section>
 
         <section class="locate">
@@ -571,14 +570,16 @@
         </section>
 
         <section class="footer">
-            <footer class="container" >
-                <p><img src="./img/logo1.png"></p>
-                <h3>BOOSTFOLIA</h3>
-                <p>MADE WITH LOVE BY DENISFEDOROVICH</p>
-                <div class="sociallinks">
-                        <a href="https://www.behance.net" target="_blank"><img src="./img/be.png" alt=""></a>
-                        <a href="https://www.twitter.com" target="_blank"><img src="./img/twitter.png" alt=""></a>
-                        <a href="https://www.facebook.com" target="_blank"><img src="./img/facebook.png" alt=""></a>
+            <footer>
+                <div class="container">
+                    <p><img src="./img/logo1.png"></p>
+                    <h3>BOOSTFOLIA</h3>
+                    <p>MADE WITH LOVE BY DENISFEDOROVICH</p>
+                    <div class="sociallinks">
+                            <a href="https://www.behance.net" target="_blank"><img src="./img/be.png" alt=""></a>
+                            <a href="https://www.twitter.com" target="_blank"><img src="./img/twitter.png" alt=""></a>
+                            <a href="https://www.facebook.com" target="_blank"><img src="./img/facebook.png" alt=""></a>
+                    </div>
                 </div>
             </footer>
         </section>

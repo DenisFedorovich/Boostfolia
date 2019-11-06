@@ -82,11 +82,6 @@ header ul {
   height: 100%;
   list-style-type: none;
 }
-header li:hover {
-  color: #f6744b;
-  transform: scale(1.1);
-  transition-duration: 0.3s;
-}
 header a {
   text-decoration: none;
   font-family: "Roboto Bold";
@@ -97,8 +92,6 @@ header a {
 }
 header a:hover {
   color: #f6744b;
-  transform: scale(1.01);
-  transition-duration: 0.3s;
 }
 
 /*slider first*/
@@ -961,11 +954,10 @@ header a:hover {
 /*get in touch*/
 .form {
   background-color: #fff;
-  padding-top: 70px;
-  padding-bottom: 89px;
 }
 .form .container {
-  max-width: 780px;
+  padding-top: 70px;
+  padding-bottom: 83px;
 }
 .form .container h3 {
   font-family: "bignoodletitling";
@@ -973,9 +965,8 @@ header a:hover {
   font-size: 48px;
   font-weight: 300;
   color: #3d3d3d;
-  margin: 0 auto;
   text-align: center;
-  vertical-align: center;
+  margin-bottom: 22px;
 }
 .form .container h3::after {
   content: "";
@@ -992,17 +983,37 @@ header a:hover {
   letter-spacing: 0.025em;
   text-align: center;
   color: #707070;
-  max-width: 550px;
-  margin: 0 auto;
-  margin-top: 22px;
+  padding: 0 210px;
+  margin: 0 auto 85px;
+}
+.form .container form .name, .form .container form .mail {
+  margin-bottom: 40px;
+}
+.form .container form label {
+  font-family: "Roboto Bold";
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #696969;
+  margin-bottom: 13px;
+  position: relative;
+}
+.form .container form label::after {
+  content: "*";
+  color: #f6744b;
+  position: absolute;
+  top: -2px;
+  right: -10px;
 }
 .form .container form input {
   width: 100%;
   border: none;
   border-bottom: 1px solid #ced4da;
   border-radius: 0;
-  padding: 28px 0 60px;
-  outline: none;
+}
+.form .container form input:focus {
+  box-shadow: none;
+  border: 2px solid #ced4da;
 }
 .form .container form ::placeholder {
   font-family: "Roboto Bold";
@@ -1010,31 +1021,32 @@ header a:hover {
   letter-spacing: 0.1em;
   color: #696969;
 }
+.form .container form .textarea {
+  margin-bottom: 60px;
+}
 .form .container form textarea {
-  height: auto;
-  margin-top: 33px;
+  height: 73px;
   resize: none;
   width: 100%;
   border: none;
   border-bottom: 1px solid #ced4da;
   border-radius: 0;
-  padding-bottom: 60px;
+}
+.form .container form textarea:focus {
+  box-shadow: none;
+  border: 2px solid #ced4da;
 }
 .form .container form button {
-  position: absolute;
   width: 203px;
   height: 51px;
   border: transparent;
   background-color: #f6744b;
   letter-spacing: 0.1em;
-  left: 50%;
-  margin-left: -92px;
-  margin-top: 43px;
   font-family: "Roboto Bold";
   font-size: 14px;
   text-decoration: none;
-  text-align: center;
   color: #fff;
+  margin: 0 auto;
 }
 
 /*locate*/
@@ -1082,11 +1094,11 @@ header a:hover {
 .locate .panel {
   padding: 0 18px;
   color: #212121;
-  background-color: #fff;
+  background-color: #ebebeb;
   text-align: center;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.3s ease-out;
 }
 .locate p {
   padding-right: 22px;
