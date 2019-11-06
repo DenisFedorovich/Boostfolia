@@ -1,9 +1,24 @@
 $(document).ready(function(){
     $('.slider1').slick({
-        // autoplay: true,
-        // autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 2000,
         slidesToShow: 1,
         slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1330,
+            settings: {
+              arrows: false,
+            }
+          },
+          {
+            breakpoint: 1024,
+            settings: {
+              arrows: false,
+              autoplay: false,
+            }
+          },
+        ]
     });
 });
 
@@ -70,3 +85,80 @@ $(this).addClass("active");
           } 
         });
       }
+
+
+$('#animate').animateNumber(
+    {
+      number: 46,
+     
+  
+
+      numberStep: function(now, tween) {
+        let floored_number = Math.floor(now),
+            target = $(tween.elem);
+  
+        target.text(floored_number + ' ');
+      }
+    },
+    {
+      easing: 'swing',
+      duration: 1800
+    }
+  );
+
+  $('#animate1').animateNumber(
+    {
+      number: 128,
+     
+  
+
+      numberStep: function(now, tween) {
+        let floored_number = Math.floor(now),
+            target = $(tween.elem);
+  
+        target.text(floored_number + ' ');
+      }
+    },
+    {
+      easing: 'swing',
+      duration: 1800
+    }
+  );
+
+  $('#animate2').animateNumber(
+    {
+      number: 450,
+     
+  
+
+      numberStep: function(now, tween) {
+        let floored_number = Math.floor(now),
+            target = $(tween.elem);
+  
+        target.text(floored_number + ' ');
+      }
+    },
+    {
+      easing: 'swing',
+      duration: 1800
+    }
+  );
+
+  $('#animate3').animateNumber(
+    {
+      number: 100,
+     
+  
+
+      numberStep: function(now, tween) {
+        let floored_number = Math.floor(now),
+            target = $(tween.elem);
+  
+        target.text(floored_number + '+');
+      }
+    },
+    {
+      easing: 'swing',
+      duration: 1800
+    }
+  );
