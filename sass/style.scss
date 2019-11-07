@@ -967,13 +967,22 @@ header {
     .slider2{
 
         .slider-theme {
-            width: 480px;
+            width: 450px;
 
             .slide-theme {
-                width: 480px;
+                width: 450px;
         
             }
 
+        }
+
+        .slick-prev {
+            left: -45px;
+            z-index: 99;
+        }
+
+        .slick-next {
+            right: -45px;
         }
     
     }
@@ -985,10 +994,10 @@ header {
     .slider2 {
     
         .slider-theme {
-            width: 260px;
+            width: 240px;
 
             .slide-theme {
-                width: 260px;
+                width: 240px;
             }
 
         }

@@ -635,18 +635,25 @@ header .container .menu-mob .menu-btn-lines::after {
 
 @media all and (max-width: 930px) {
   .slider2 .slider-theme {
-    width: 480px;
+    width: 450px;
   }
   .slider2 .slider-theme .slide-theme {
-    width: 480px;
+    width: 450px;
+  }
+  .slider2 .slick-prev {
+    left: -45px;
+    z-index: 99;
+  }
+  .slider2 .slick-next {
+    right: -45px;
   }
 }
 @media all and (max-width: 576px) {
   .slider2 .slider-theme {
-    width: 260px;
+    width: 240px;
   }
   .slider2 .slider-theme .slide-theme {
-    width: 260px;
+    width: 240px;
   }
 }
 /*who we are*/
