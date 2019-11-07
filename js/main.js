@@ -1,3 +1,4 @@
+/*first slider*/
 $(document).ready(function(){
     $('.slider1').slick({
         autoplay: true,
@@ -22,11 +23,32 @@ $(document).ready(function(){
     });
 });
 
+/*second*/
 $('.slider-theme').slick({
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 1
-  });
+    slidesToScroll: 1,
+    responsive: [
+        {
+          breakpoint: 930,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            arrows: true,
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            arrows: true,
+          }
+        },
+      ]
+    });
 
 $(document).ready(function(){
 
@@ -86,7 +108,7 @@ $(this).addClass("active");
         });
       }
 
-
+/*animate*/
 $('#animate').animateNumber(
     {
       number: 46,
@@ -162,3 +184,22 @@ $('#animate').animateNumber(
       duration: 1800
     }
   );
+
+  /*mobile menu*/
+
+let menuBtn = document.querySelector('.menu-btn');
+let menuLines = document.querySelector('.menu-btn-lines');
+let menuMobBox = document.querySelector('.menu-box');
+let menuItem = document.querySelectorAll('.menu-item');
+
+menuBtn.addEventListener('click', function() {
+  menuLines.classList.toggle("menu-btn-active");
+  menuMobBox.classList.toggle("menu-show");
+});
+
+menuItem.forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    menuLines.classList.remove("menu-btn-active");
+  menuMobBox.classList.remove("menu-show");
+  });
+});
