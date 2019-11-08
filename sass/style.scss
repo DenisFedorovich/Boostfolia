@@ -908,22 +908,22 @@ header {
     background: #1c1c1c;
     //padding-top: 75px;
     //padding-bottom: 75px;
-    padding: 105px 0 75px;
+    padding: 90px 0 90px;
 
     .slider-theme {
         width: 694px;
         //padding-top: 30px;
         margin: 0 auto;
 
-        .slick-track {
-            //margin: 0;
-
-            .slick-slide {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
+        .slick-slide {
+            width: 220px;
+            height: 58px;
+            overflow: hidden;
             }
+        
+            img {
+                margin: 0 auto;
+            }    
 
         }
 
@@ -960,17 +960,17 @@ header {
         content: url("../img/rightarrow4.png"); 
     }
 
-}
+
 
 @media all and (max-width: 930px) {
 
-    .slider2{
+    .slider2 {
 
         .slider-theme {
-            width: 450px;
+            width: 490px;
 
-            .slide-theme {
-                width: 450px;
+            .img {
+                width: 220px;
         
             }
 
@@ -994,14 +994,19 @@ header {
     .slider2 {
     
         .slider-theme {
-            width: 240px;
-
-            .slide-theme {
-                width: 240px;
-            }
+            width: 260px;
 
         }
     
+        .slick-prev {
+            left: -45px;
+            z-index: 99;
+        }
+
+        .slick-next {
+            right: -45px;
+        }
+
     }
 
 }
@@ -1156,11 +1161,11 @@ header {
     
                     .skill-block {
     
-                        div {
-                            display: flex;
-                            flex-direction: row;
+                        .ph, .il, .sk, .as  {
+                            display: grid;
+                            grid-template: 1fr / 125px 1fr  30px;
+                            grid-gap: 10px;
                             align-items: center;
-                            justify-content: space-between;
                             margin-bottom: 11px;
                         }
     
@@ -1172,10 +1177,6 @@ header {
                             color: #3d3d3d;
                             margin: 0;
     
-                            &:first-of-type {
-                                width: 135px;
-                            }
-    
                             &:last-of-type {
                                 font-family: "Roboto Thin";
                             }
@@ -1183,9 +1184,7 @@ header {
                         }
     
                         span {
-                            display: inline-block;
-                            width: 370px;
-                            height: 5px;
+                            
                             border-bottom: 2px solid transparent;
                         }
 
@@ -1331,6 +1330,31 @@ header {
 
     }
     
+}
+
+@media all and (max-width: 1024px) {
+
+    .whoweare {
+
+        .container {
+    
+            .slider-workers {
+                grid-template: 1fr 1fr / 1fr;
+
+                .slider-workers1 {
+                    width: 100%;
+                }
+
+                .slider-skills {
+                    width: 100%;
+                }
+             
+            }
+
+        }   
+
+    }
+
 }
 
 /*somefeatures*/
@@ -2006,7 +2030,7 @@ header {
     background: #171f23;
 
         .container {
-            padding: 53px 0 94px;
+            padding: 53px 0 45px;
             
 
         h3 {
