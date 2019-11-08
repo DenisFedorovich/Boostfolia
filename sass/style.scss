@@ -1337,21 +1337,24 @@ header {
     .whoweare {
 
         .container {
-    
+
             .slider-workers {
                 grid-template: 1fr 1fr / 1fr;
+                grid-row-gap: 20px;
 
                 .slider-workers1 {
-                    width: 100%;
+                    width: 92vw;
+
                 }
 
                 .slider-skills {
-                    width: 100%;
+                    width: 92vw;
+
                 }
-             
+
             }
 
-        }   
+        }
 
     }
 

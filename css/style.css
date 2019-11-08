@@ -867,12 +867,13 @@ header .container .menu-mob .menu-btn-lines::after {
 @media all and (max-width: 1024px) {
   .whoweare .container .slider-workers {
     grid-template: 1fr 1fr/1fr;
+    grid-row-gap: 20px;
   }
   .whoweare .container .slider-workers .slider-workers1 {
-    width: 100%;
+    width: 92vw;
   }
   .whoweare .container .slider-workers .slider-skills {
-    width: 100%;
+    width: 92vw;
   }
 }
 /*somefeatures*/

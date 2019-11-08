@@ -84,13 +84,31 @@ $(this).addClass("active");
         arrows: false,
         dots: true,
         fade: true,
-        asNavFor: '.slider-skills'
+        asNavFor: '.slider-skills',
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                respondTo: 'slider',
+                adaptiveHeight: true
+              }
+            },
+        ]
       });
       $('.slider-skills').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         draggable: false,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                respondTo: 'slider',
+                adaptiveHeight: true
+              }
+            },
+        ]
       })
 
       let acc = document.getElementsByClassName("accordion");
