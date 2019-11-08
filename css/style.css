@@ -72,9 +72,6 @@ header .container .logo {
   margin-left: 25px;
 }
 header .container nav {
-  /* max-width: 655px;
-      width: 100%;
-      margin: -47px; */
   padding-top: 15px;
 }
 header .container nav ul {
@@ -258,7 +255,6 @@ header .container .menu-mob .menu-btn-lines::after {
 .slider {
   width: 100%;
   padding-top: 144px;
-  /*position: relative;*/
 }
 .slider h1 {
   position: fixed;
@@ -275,7 +271,7 @@ header .container .menu-mob .menu-btn-lines::after {
 .slider .slide h2 {
   font-family: "bignoodletitling";
   letter-spacing: 0.15em;
-  font-size: 72px;
+  font-size: 50px;
   font-weight: 300;
   text-shadow: black 0 0 3px;
   color: #d6d5d5;
@@ -285,7 +281,7 @@ header .container .menu-mob .menu-btn-lines::after {
 .slider .slide .creative {
   font-family: "bignoodletitling";
   letter-spacing: 0.1em;
-  font-size: 36px;
+  font-size: 30px;
   text-shadow: black 0 0 3px;
   color: #d6d5d5;
   text-align: center;
@@ -349,7 +345,7 @@ header .container .menu-mob .menu-btn-lines::after {
     padding: 200px 0;
   }
   .slider .slide .creative {
-    padding: 0 20px;
+    padding: 60px 0 20px;
   }
 }
 /*about us*/
@@ -870,10 +866,14 @@ header .container .menu-mob .menu-btn-lines::after {
     grid-row-gap: 20px;
   }
   .whoweare .container .slider-workers .slider-workers1 {
-    width: 92vw;
+    width: 90vw;
   }
   .whoweare .container .slider-workers .slider-skills {
-    width: 92vw;
+    width: 90vw;
+  }
+  .whoweare .container .slider-workers .slider-skills {
+    padding: 88px 50px 20px 70px;
+    text-align: center;
   }
 }
 /*somefeatures*/
@@ -1333,6 +1333,14 @@ header .container .menu-mob .menu-btn-lines::after {
   margin: 0 auto;
 }
 
+@media all and (max-width: 576px) {
+  header .container .logo {
+    margin-left: 10px;
+  }
+  header .container nav ul li {
+    margin-left: 10px;
+  }
+}
 /*locate*/
 .locate {
   width: 100%;

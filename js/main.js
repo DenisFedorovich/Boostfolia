@@ -221,3 +221,19 @@ menuItem.forEach(function(btn) {
   menuMobBox.classList.remove("menu-show");
   });
 });
+
+/*scroll menu*/
+
+$("#menu").on("click","a", function (event) {
+  event.preventDefault();
+    let id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 900);
+});
+
+$("#menu-mob").on("click", "a", function (event) {
+  event.preventDefault();
+  let id  = $(this).attr('href'),
+      top = $(id).offset().top;
+  $('body,html').animate({scrollTop: top}, 900);
+});
