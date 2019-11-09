@@ -146,7 +146,7 @@ header .container .menu-mob .menu-box {
   width: 300px;
   height: 100%;
   text-align: center;
-  background-color: #6d6396;
+  background-color: #ebebeb;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
   z-index: 100;
   transition-duration: 0.5s;
@@ -181,74 +181,6 @@ header .container .menu-mob .menu-item {
   }
   header .container .menu-mob {
     display: block;
-  }
-  header .container .menu-mob a {
-    color: #fff;
-  }
-  header .container .menu-mob .menu-btn {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 26px;
-    height: 26px;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    z-index: 101;
-    padding: 0;
-  }
-  header .container .menu-mob .menu-btn-lines,
-header .container .menu-mob .menu-btn-lines::before,
-header .container .menu-mob .menu-btn-lines::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #171f23;
-    transition-duration: 0.5s;
-    box-shadow: 0px 0px 2px #ebebeb;
-  }
-  header .container .menu-mob .menu-btn-lines::before {
-    content: "";
-    top: -8px;
-  }
-  header .container .menu-mob .menu-btn-lines::after {
-    content: "";
-    top: 8px;
-  }
-  header .container .menu-mob .menu-btn-active {
-    transform: rotate(45deg);
-  }
-  header .container .menu-mob .menu-btn-active::before {
-    top: 0;
-    transform: rotate(0);
-  }
-  header .container .menu-mob .menu-btn-active::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  header .container .menu-mob .menu-box {
-    display: block;
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 300px;
-    height: 100%;
-    text-align: center;
-    background-color: #707070;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
-    z-index: 100;
-    transition-duration: 0.5s;
-    margin: 0;
-    padding: 80px 0;
-  }
-  header .container .menu-mob .menu-show {
-    right: 0;
-  }
-  header .container .menu-mob .menu-item {
-    display: block;
-    transition-duration: 0.5s;
-    padding: 12px 24px;
   }
 }
 /*slider first*/
@@ -423,12 +355,15 @@ header .container .menu-mob .menu-btn-lines::after {
   max-width: 250px;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 768px) {
   .aboutus {
     background-color: #fff;
   }
   .aboutus .container {
-    padding: 50px 0 50px;
+    padding: 25px 0 25px;
+  }
+  .aboutus .container .aboutus1 {
+    padding: 0 10px 0 10px;
   }
   .aboutus .container .block {
     display: grid;
@@ -560,6 +495,8 @@ header .container .menu-mob .menu-btn-lines::after {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
 }
 .ourworks .gallery-product img:hover {
   opacity: 0.5;
@@ -569,6 +506,9 @@ header .container .menu-mob .menu-btn-lines::after {
 @media all and (max-width: 768px) {
   .ourworks .container {
     padding: 0;
+  }
+  .ourworks .container .ourworks1 {
+    padding: 0 10px 0 10px;
   }
   .ourworks .container h3 {
     margin-bottom: 15px;
@@ -582,6 +522,9 @@ header .container .menu-mob .menu-btn-lines::after {
     padding: 0;
     flex-direction: column;
     margin-bottom: 15px;
+  }
+  .ourworks .container .ourworks1 {
+    padding: 0 10px 0 10px;
   }
   .ourworks .container h3 {
     margin-bottom: 50px;
@@ -861,6 +804,13 @@ header .container .menu-mob .menu-btn-lines::after {
 }
 
 @media all and (max-width: 1024px) {
+  .whoweare .container {
+    padding-top: 25px;
+    padding-bottom: 40px;
+  }
+  .whoweare .container p {
+    margin: 0px auto 35px;
+  }
   .whoweare .container .slider-workers {
     grid-template: 1fr 1fr/1fr;
     grid-row-gap: 20px;
@@ -994,7 +944,6 @@ header .container .menu-mob .menu-btn-lines::after {
   margin: 0 auto;
 }
 .blogpost .row {
-  width: 1004px;
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -1115,9 +1064,10 @@ header .container .menu-mob .menu-btn-lines::after {
 @media all and (max-width: 768px) {
   .blogpost {
     background-color: #fff;
+    padding-bottom: 30px;
   }
   .blogpost .container {
-    padding: 50px 0 50px;
+    padding: 25px 0 25px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1132,8 +1082,9 @@ header .container .menu-mob .menu-btn-lines::after {
     flex-direction: column;
     width: 100%;
   }
-  .blogpost .container .card {
-    margin-top: 15px;
+
+  .card {
+    margin: 0 auto 20px;
   }
 }
 /*choseplan*/

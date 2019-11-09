@@ -19,6 +19,14 @@ $(document).ready(function(){
               autoplay: false,
             }
           },
+          {
+            breakpoint: 576,
+            settings: {
+              arrows: false,
+              autoplay: false,
+              draggable: false,
+            }
+          },
         ]
     });
 });
