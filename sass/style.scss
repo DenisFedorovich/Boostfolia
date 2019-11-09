@@ -1758,6 +1758,7 @@ header {
         }
 
         form {
+            margin: 0;
 
             .name, .mail {
                 margin-bottom: 40px;
@@ -1844,12 +1845,20 @@ header {
 
     .form {
 
-        .container {
-
+        .container {        
+            padding-top: 30px;
+            padding-bottom: 20px;
             p {
                     padding: 0px 44px;
             }
           
+        }
+
+        .container form {
+
+            .textarea {
+                margin-bottom: 30px;
+            }
         }
 
     }

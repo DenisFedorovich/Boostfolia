@@ -1258,6 +1258,9 @@ header .container .menu-mob .menu-item {
   padding: 0 210px;
   margin: 0 auto 85px;
 }
+.form .container form {
+  margin: 0;
+}
 .form .container form .name, .form .container form .mail {
   margin-bottom: 40px;
 }
@@ -1322,8 +1325,15 @@ header .container .menu-mob .menu-item {
 }
 
 @media all and (max-width: 576px) {
+  .form .container {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
   .form .container p {
     padding: 0px 44px;
+  }
+  .form .container form .textarea {
+    margin-bottom: 30px;
   }
 }
 /*locate*/
