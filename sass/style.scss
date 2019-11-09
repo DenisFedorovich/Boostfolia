@@ -672,6 +672,7 @@ header {
 
 }
 
+
 /*our works*/
 
 .ourworks {
@@ -1266,7 +1267,7 @@ header {
                 }
 
                 .slider-skills {
-                    padding: 88px 50px 20px 70px;
+                    padding: 120px 50px 20px 70px;
                     text-align: center;
                 }
 
@@ -1285,7 +1286,7 @@ header {
     background: #171f23;
 
     .container {
-        padding: 53px 0 47px;
+        padding: 53px 10px 47px;
 
         h3 {
             font-family: "Roboto Condensed";
@@ -1358,20 +1359,16 @@ header {
         background-color: #171f23;
     
         .container {
-            padding: 50px 0 50px;
+            padding: 50px 10px 50px;
 
             .block3 {
                 display: grid;
-                grid-template: 210px 210px 210px/ 1fr;
+                grid-template: 210px 210px / 1fr 1fr;
                 grid-gap: 12px;
             }
 
-            div {
+            .featurescolor{
                 border: solid 1px #ff7062;
-            }
-
-            div:hover {
-                transform:none;
             }
             
         }
@@ -1567,31 +1564,44 @@ header {
 
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 768px) {
     
     .blogpost {
         background-color: #fff;
+        
     
         .container {
             padding: 50px 0 50px;
             display: flex;
             flex-direction: column;
+            width: 100%;
 
-            .row {
-                
-            }
+            
 
             div {
                 border: solid 1px #ff7062;
+                
             }
 
             div:hover {
                 transform:none;
             }
+
+            .row {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .card {
+                margin-top: 15px;
+                        
+            }
             
         }
             
     }
+
+    
 
 }
 
@@ -1722,6 +1732,60 @@ header {
 
 }
 
+@media all and (max-width: 1004px) {
+    
+    .choseplan {
+    
+        .container {
+            padding: 50px 10px 50px;
+
+            .block5 {
+                display: grid;
+                grid-template: 450px 450px / 1fr 1fr;
+                grid-gap: 12px;
+            }
+
+            div {
+                border: transparent;
+            }
+
+            div:hover {
+                transform:none;
+            }
+            
+        }
+            
+    }
+
+}
+
+@media all and (max-width: 576px) {
+    
+    .choseplan {
+    
+        .container {
+            padding: 50px 10px 50px;
+
+            .block5 {
+                display: grid;
+                grid-template: 450px / 1fr;
+                grid-gap: 12px;
+            }
+
+            div {
+                border: transparent;
+            }
+
+            div:hover {
+                transform:none;
+            }
+            
+        }
+            
+    }
+
+}
+
 /*get in touch*/
 
 .form {
@@ -1841,29 +1905,18 @@ header {
 
 @media all and (max-width: 576px) {
 
-    header {
+    .form {
 
         .container {
 
-            .logo {
-                margin-left: 10px;
+            p {
+                    padding: 0px 44px;
             }
-
-            nav {
-
-                ul {
-
-                    li {
-                        margin-left: 10px;
-                    }
-
-                }
-
-            }
-
+          
         }
 
     }
+
 }
 
 /*locate*/
@@ -1930,6 +1983,15 @@ header {
      
 }
 
+@media all and (max-width: 800px) {
+
+    iframe {
+        max-width: 100%;
+    }
+
+}
+
+/*footer*/
 .footer {
     width: 100%;
     background: #171f23;
