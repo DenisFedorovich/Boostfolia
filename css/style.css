@@ -315,7 +315,7 @@ header .container .menu-mob .menu-item {
   text-align: center;
   margin: 0 auto 20px;
 }
-.aboutus .container h3::after {
+.aboutus .container h3:after {
   content: "";
   display: block;
   width: 153px;
@@ -438,9 +438,6 @@ header .container .menu-mob .menu-item {
 }
 
 /*our works*/
-.ourworks {
-  max-width: 100%;
-}
 .ourworks .container {
   padding: 69px 0 66px;
 }
@@ -453,7 +450,7 @@ header .container .menu-mob .menu-item {
   text-align: center;
   margin-bottom: 22px;
 }
-.ourworks .container h3::after {
+.ourworks .container h3:after {
   content: "";
   display: block;
   width: 153px;
@@ -482,21 +479,21 @@ header .container .menu-mob .menu-item {
   color: #3d3d3d;
   padding: 7px 13px;
 }
-.ourworks .filter-button:hover {
+.ourworks .buttons-block .filter-button:hover {
   font-family: "Roboto Bold";
   font-weight: 600;
   border-bottom: 1px solid #e84c3d;
   border-radius: 0;
   text-align: center;
 }
-.ourworks .filter-button:focus {
+.ourworks .buttons-block .filter-button:focus {
   font-family: "Roboto Bold";
   box-shadow: none;
   font-weight: 600;
   border-bottom: 1px solid #e84c3d;
   border-radius: 0;
 }
-.ourworks .btn-default:active .filter-button:active {
+.ourworks .buttons-block .btn-default:active .filter-button:active {
   color: white;
 }
 .ourworks .gallery-product {
@@ -654,7 +651,7 @@ header .container .menu-mob .menu-item {
   vertical-align: center;
   margin-bottom: 22px;
 }
-.whoweare .container h3::after {
+.whoweare .container h3:after {
   content: "";
   display: block;
   width: 153px;
@@ -713,10 +710,9 @@ header .container .menu-mob .menu-item {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  align-content: space-between;
 }
 .whoweare .container .slider-workers .slider-workers1 .designerslinks a {
-  margin-right: 7px;
+  margin-right: 10px;
 }
 .whoweare .container .slider-workers .slider-workers1 .slick-dots {
   background: #ebebeb;
@@ -879,7 +875,7 @@ header .container .menu-mob .menu-item {
   text-align: center;
   margin-bottom: 20px;
 }
-.features .container h3::after {
+.features .container h3:after {
   content: "";
   display: block;
   width: 86px;
@@ -908,17 +904,17 @@ header .container .menu-mob .menu-item {
 .features .container .block3 div:hover h6, .features .container .block3 div:hover p {
   color: #ff7062;
 }
-.features .container .block3 img {
+.features .container .block3 div img {
   margin-bottom: 27px;
 }
-.features .container .block3 h6 {
+.features .container .block3 div h6 {
   font-family: "Roboto Light";
   font-size: 18px;
   font-weight: 300;
   color: #f6f6f6;
   margin-bottom: 8px;
 }
-.features .container .block3 p {
+.features .container .block3 div p {
   font-size: 48px;
   font-family: "Roboto Thin";
   text-align: center;
@@ -943,9 +939,6 @@ header .container .menu-mob .menu-item {
   }
 }
 /*blogposts*/
-.blogpost {
-  max-width: 100%;
-}
 .blogpost .container {
   padding: 65px 0 110px;
 }
@@ -960,7 +953,7 @@ header .container .menu-mob .menu-item {
   vertical-align: center;
   margin-bottom: 22px;
 }
-.blogpost .container h3::after {
+.blogpost .container h3:after {
   content: "";
   display: block;
   width: 153px;
@@ -1145,7 +1138,7 @@ header .container .menu-mob .menu-item {
   text-align: center;
   margin-bottom: 53px;
 }
-.choseplan .container h3::after {
+.choseplan .container h3:after {
   content: "";
   display: block;
   width: 86px;
@@ -1346,7 +1339,7 @@ header .container .menu-mob .menu-item {
 .form .container form .textarea {
   margin-bottom: 60px;
 }
-.form .container form textarea {
+.form .container form .textarea textarea {
   height: 73px;
   resize: none;
   width: 100%;
@@ -1354,7 +1347,7 @@ header .container .menu-mob .menu-item {
   border-bottom: 1px solid #ced4da;
   border-radius: 0;
 }
-.form .container form textarea:focus {
+.form .container form .textarea textarea:focus {
   box-shadow: none;
   border: 2px solid #ced4da;
 }
@@ -1375,6 +1368,11 @@ header .container .menu-mob .menu-item {
   border: solid 1px #b11000;
 }
 
+@media all and (max-width: 768px) {
+  .form .container p {
+    padding: 0px 20px;
+  }
+}
 @media all and (max-width: 576px) {
   .form .container {
     padding-top: 30px;
@@ -1449,7 +1447,6 @@ header .container .menu-mob .menu-item {
 }
 /*footer*/
 .footer {
-  width: 100%;
   background: #171f23;
 }
 .footer .container {
