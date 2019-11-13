@@ -650,11 +650,11 @@ header .container .menu-mob .menu-item {
     width: 260px;
   }
   .slider2 .slick-prev {
-    left: -45px;
+    left: -15px;
     z-index: 99;
   }
   .slider2 .slick-next {
-    right: -45px;
+    right: -15px;
   }
 }
 /*who we are*/
