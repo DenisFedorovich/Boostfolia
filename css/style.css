@@ -420,20 +420,20 @@ header .container .menu-mob .menu-item {
   margin-bottom: 25px;
 }
 .videomain .videoblock .buttonvideo {
+  font-family: "Roboto Bold";
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ebebeb;
+  height: 100%;
   width: 127px;
   height: 35px;
   border: transparent;
   border-bottom: 2px solid #b11000;
   background-color: #e84c3d;
   margin: 0 auto;
-}
-.videomain .videoblock .buttonvideo a {
-  font-family: "Roboto Bold";
-  font-size: 14px;
-  text-decoration: none;
-  text-align: center;
-  color: #ebebeb;
-  height: 100%;
 }
 .videomain video {
   width: 100%;
@@ -1216,6 +1216,14 @@ header .container .menu-mob .menu-item {
   margin-top: 16px;
 }
 .choseplan .container .block5 .colorblock .colorbottom .buttonplan {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto Bold";
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  color: #ebebeb;
+  height: 100%;
   width: 127px;
   height: 35px;
   border: transparent;
@@ -1226,19 +1234,6 @@ header .container .menu-mob .menu-item {
 .choseplan .container .block5 .colorblock .colorbottom .buttonplan:focus {
   outline: none;
   border: solid 1px #b11000;
-}
-.choseplan .container .block5 .colorblock .colorbottom .buttonplan a {
-  width: 100%;
-  height: 100%;
-  font-family: "Roboto Bold";
-  font-size: 14px;
-  text-decoration: none;
-  text-align: center;
-  color: #ebebeb;
-  height: 100%;
-}
-.choseplan .container .block5 .colorblock .colorbottom .buttonplan a:focus {
-  outline: none;
 }
 .choseplan .container .block5 .colorblock .colorbottom .buttonplan:hover {
   transform: scale(1.02, 1.02);
