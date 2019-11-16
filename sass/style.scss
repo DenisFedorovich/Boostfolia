@@ -1283,23 +1283,29 @@ header {
 
         .container {
             padding-top: 25px;
-            padding-bottom: 40px;
+            padding-bottom: 25px;
 
             p {
                 margin: 0px auto 35px;
             }
 
             .slider-workers {
-                grid-template: 1fr 1fr / 300px;
-                grid-row-gap: 20px;
+                grid-template: 320px 1fr / 1fr;
+                grid-row-gap: 0;
 
                 .slider-workers1 {
-                    width: 90vw;
+                    width: 95vw;
                     padding-top: 30px;
+                    height: 310px;
+
+                    .slick-dots {
+                        bottom: 20px;
+                    }
+
                 }
 
                 .slider-skills {
-                    width: 90vw;
+                    width: 95vw;
                 }
 
                 .slider-skills {
@@ -1309,8 +1315,48 @@ header {
 
             }
 
-            .slick-dots {
-                bottom: 110px;
+        }
+
+    }
+
+}
+
+@media all and (max-width: 576px) {
+
+    .whoweare {
+
+        .container {
+            padding-top: 25px;
+            padding-bottom: 15px;
+
+            p {
+                margin: 0px auto 35px;
+            }
+
+            .slider-workers {
+                grid-template: 320px 1fr / 1fr;
+                grid-row-gap: 0;
+
+                .slider-workers1 {
+                    width: 88vw;
+                    padding-top: 30px;
+                    height: 310px;
+
+                    .slick-dots {
+                        bottom: 20px;
+                    }
+
+                }
+
+                .slider-skills {
+                    width: 88vw;
+                }
+
+                .slider-skills {
+                    padding: 30px 50px 20px 70px;
+                    text-align: center;
+                }
+
             }
 
         }
@@ -1654,6 +1700,7 @@ header {
 
             & > p {  
                 padding: 0 10px;
+                margin-bottom: 10px;
             }
 
             .cards-block {
