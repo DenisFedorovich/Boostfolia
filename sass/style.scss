@@ -54,6 +54,11 @@
     margin: 0 auto;
 }
 
+@keyframes animations { 
+    from {background-color: #f6e5e0}
+    to {background-color: #e87e5d}
+}
+
 $background-color: #f8f6f6;
 
 $font-family: "bignoodletitling";
@@ -321,8 +326,7 @@ header {
 
         h2 {
             font-family: $font-family;
-            letter-spacing: 0.15em;
-            font-size: 50px;
+            
             font-weight: 300;
             text-shadow: $text-shadow; 
             color: $color;
@@ -378,6 +382,7 @@ header {
 
     .slick-prev {
         left: 150px;
+        top: 50%;
         z-index: 99;
     }
     
@@ -395,6 +400,7 @@ header {
 
     .slick-next {
         right: 150px;
+        top: 50%;
     }
 
     .slick-next::before {
@@ -433,11 +439,18 @@ header {
     .slider {
         
         .slide {
-            padding: 200px 0;
+            padding: 100px 0;
 
             .creative {
                 padding: 60px 0 20px;
+                font-size: 20px;
 
+            }
+
+            h2 {
+                letter-spacing: 0;
+                font-size: 45px;
+                padding-top: 40px;
             }
 
         }
@@ -445,7 +458,6 @@ header {
     }
 
 }
-
 
 /*about us*/
 
@@ -815,7 +827,7 @@ header {
 /*slider2*/
 .slider2 {
     background: #1c1c1c;
-    padding: 90px 0 90px;
+    padding: 100px 0 80px;
 
     .slider-theme {
         width: 694px;
@@ -852,6 +864,7 @@ header {
 
     .slick-prev {
         left: -108px;
+        top: 7px;
         z-index: 99;
     }
     
@@ -869,6 +882,7 @@ header {
 
     .slick-next {
         right: -124px;
+        top: 7px;
     }
 
     .slick-next::before {
@@ -1275,11 +1289,12 @@ header {
             }
 
             .slider-workers {
-                grid-template: 1fr 1fr / 1fr;
+                grid-template: 1fr 1fr / 300px;
                 grid-row-gap: 20px;
 
                 .slider-workers1 {
                     width: 90vw;
+                    padding-top: 30px;
                 }
 
                 .slider-skills {
@@ -1287,10 +1302,14 @@ header {
                 }
 
                 .slider-skills {
-                    padding: 120px 50px 20px 70px;
+                    padding: 30px 50px 20px 70px;
                     text-align: center;
                 }
 
+            }
+
+            .slick-dots {
+                bottom: 110px;
             }
 
         }
@@ -1388,6 +1407,15 @@ header {
                 display: grid;
                 grid-template: 210px 210px / 1fr 1fr;
                 grid-gap: 12px;
+
+                div {
+                    
+                    h6 {
+                    font-size: 16px;
+                    }
+
+                }
+
             }
 
             .featurescolor{
@@ -1476,6 +1504,12 @@ header {
                         top: 50%;
                         left: 50%;
                         transform: translate(-50%, -50%);
+
+                    &:hover {
+                        transform: scale(1.05, 1.05);
+                        transition-duration: .5s;
+                        }
+
                     }
     
                 }
@@ -1503,6 +1537,7 @@ header {
                         transform: translate(-50%, -50%);
                         background: url(../img/button-view.png) center no-repeat;
                         background-size: contain;
+
                     }
     
                 }
@@ -1510,17 +1545,19 @@ header {
                 &:hover {
         
                     img {
-                        filter: blur(4px);    
+                        filter: blur(4px);  
                     }
                     
                     .button-link {
                         display: block;
+                        animation: animations .9s ease-in .5s 1;
+                
                         
                     }
             
                     .button-view {
-                        display: block;
-                        
+                        display: block; 
+                        animation: animations .9s ease-in .5s 1;
                     }
                     
                 }
@@ -1730,7 +1767,9 @@ header {
                         font-family: "Roboto Bold"; 
                         font-size: 14px;
                         text-decoration: none;
-                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         color: #ebebeb;
                         height: 100%;
                         width: 127px;
@@ -1753,6 +1792,7 @@ header {
                     }
 
                 }
+                
 
                 &:hover {
                     transform: scale(1.02, 1.02);
@@ -1976,13 +2016,19 @@ header {
     .form {
 
         .container {        
-            padding-top: 30px;
-            padding-bottom: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
             p {
-                    padding: 0px 44px;
+                padding: 0px 25px;
+                margin: 0 auto 20px;
             }
 
             form {
+
+                .name, .mail {
+                    margin-bottom: 25px;
+                }
 
                 .textarea {
                     margin-bottom: 30px;
@@ -2110,6 +2156,24 @@ header {
 
             }
 
+        }
+
+        .be {
+            &:hover {
+                content: url("../img/be1.png"); 
+            }
+        }
+
+        .twitter {
+            &:hover {
+                content: url("../img/twitter1.png"); 
+            }
+        }
+
+        .facebook {
+            &:hover {
+                content: url("../img/facebook1.png"); 
+            }
         }
 
     }

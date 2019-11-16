@@ -27,6 +27,14 @@
   font-family: "Bold Condensed";
   src: url("../fonts/3956.ttf") format("truetype");
 }
+@keyframes animations {
+  from {
+    background-color: #f6e5e0;
+  }
+  to {
+    background-color: #e87e5d;
+  }
+}
 p, h1, h2, h3, h4, h5, h6, ul, nav {
   margin: 0;
   padding-right: 0;
@@ -209,8 +217,6 @@ header .container .menu-mob .menu-item {
 }
 .slider .slide h2 {
   font-family: "bignoodletitling";
-  letter-spacing: 0.15em;
-  font-size: 50px;
   font-weight: 300;
   text-shadow: black 0 0 3px;
   color: #d6d5d5;
@@ -256,6 +262,7 @@ header .container .menu-mob .menu-item {
 }
 .slider .slick-prev {
   left: 150px;
+  top: 50%;
   z-index: 99;
 }
 .slider .slick-prev::before {
@@ -270,6 +277,7 @@ header .container .menu-mob .menu-item {
 }
 .slider .slick-next {
   right: 150px;
+  top: 50%;
 }
 .slider .slick-next::before {
   content: url("../img/rightarrow.png");
@@ -293,10 +301,16 @@ header .container .menu-mob .menu-item {
 }
 @media all and (max-width: 576px) {
   .slider .slide {
-    padding: 200px 0;
+    padding: 100px 0;
   }
   .slider .slide .creative {
     padding: 60px 0 20px;
+    font-size: 20px;
+  }
+  .slider .slide h2 {
+    letter-spacing: 0;
+    font-size: 45px;
+    padding-top: 40px;
   }
 }
 /*about us*/
@@ -578,7 +592,7 @@ header .container .menu-mob .menu-item {
 /*slider2*/
 .slider2 {
   background: #1c1c1c;
-  padding: 90px 0 90px;
+  padding: 100px 0 80px;
 }
 .slider2 .slider-theme {
   width: 694px;
@@ -602,6 +616,7 @@ header .container .menu-mob .menu-item {
 
 .slick-prev {
   left: -108px;
+  top: 7px;
   z-index: 99;
 }
 
@@ -617,6 +632,7 @@ header .container .menu-mob .menu-item {
 
 .slick-next {
   right: -124px;
+  top: 7px;
 }
 
 .slick-next::before {
@@ -866,18 +882,22 @@ header .container .menu-mob .menu-item {
     margin: 0px auto 35px;
   }
   .whoweare .container .slider-workers {
-    grid-template: 1fr 1fr/1fr;
+    grid-template: 1fr 1fr/300px;
     grid-row-gap: 20px;
   }
   .whoweare .container .slider-workers .slider-workers1 {
     width: 90vw;
+    padding-top: 30px;
   }
   .whoweare .container .slider-workers .slider-skills {
     width: 90vw;
   }
   .whoweare .container .slider-workers .slider-skills {
-    padding: 120px 50px 20px 70px;
+    padding: 30px 50px 20px 70px;
     text-align: center;
+  }
+  .whoweare .container .slick-dots {
+    bottom: 110px;
   }
 }
 /*somefeatures*/
@@ -956,6 +976,9 @@ header .container .menu-mob .menu-item {
     grid-template: 210px 210px/1fr 1fr;
     grid-gap: 12px;
   }
+  .features .container .block3 div h6 {
+    font-size: 16px;
+  }
   .features .container .featurescolor {
     border: solid 1px #ff7062;
   }
@@ -1032,6 +1055,10 @@ header .container .menu-mob .menu-item {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.blogpost .cards-block .card .card-img .button-link:after:hover {
+  transform: scale(1.05, 1.05);
+  transition-duration: 0.5s;
+}
 .blogpost .cards-block .card .card-img .button-view {
   display: none;
   background-color: #f6e5e0;
@@ -1061,9 +1088,11 @@ header .container .menu-mob .menu-item {
 }
 .blogpost .cards-block .card .card-img:hover .button-link {
   display: block;
+  animation: animations 0.9s ease-in 0.5s 1;
 }
 .blogpost .cards-block .card .card-img:hover .button-view {
   display: block;
+  animation: animations 0.9s ease-in 0.5s 1;
 }
 .blogpost .cards-block .card .card-body {
   background: #ebebeb;
@@ -1221,7 +1250,9 @@ header .container .menu-mob .menu-item {
   font-family: "Roboto Bold";
   font-size: 14px;
   text-decoration: none;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #ebebeb;
   height: 100%;
   width: 127px;
@@ -1392,11 +1423,15 @@ header .container .menu-mob .menu-item {
 }
 @media all and (max-width: 576px) {
   .form .container {
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .form .container p {
-    padding: 0px 44px;
+    padding: 0px 25px;
+    margin: 0 auto 20px;
+  }
+  .form .container form .name, .form .container form .mail {
+    margin-bottom: 25px;
   }
   .form .container form .textarea {
     margin-bottom: 30px;
@@ -1498,6 +1533,15 @@ header .container .menu-mob .menu-item {
 .footer .container .sociallinks a:focus {
   outline: none;
   border-bottom: solid 1px #ebebeb;
+}
+.footer .container .be:hover {
+  content: url("../img/be1.png");
+}
+.footer .container .twitter:hover {
+  content: url("../img/twitter1.png");
+}
+.footer .container .facebook:hover {
+  content: url("../img/facebook1.png");
 }
 
 /*# sourceMappingURL=style.css.map */
