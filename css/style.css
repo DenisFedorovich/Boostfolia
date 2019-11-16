@@ -899,7 +899,7 @@ header .container .menu-mob .menu-item {
     width: 95vw;
   }
   .whoweare .container .slider-workers .slider-skills {
-    padding: 30px 50px 20px 70px;
+    padding: 30px 30px 20px;
     text-align: center;
   }
 }
@@ -927,7 +927,7 @@ header .container .menu-mob .menu-item {
     width: 88vw;
   }
   .whoweare .container .slider-workers .slider-skills {
-    padding: 30px 50px 20px 70px;
+    padding: 30px 30px 20px;
     text-align: center;
   }
 }
