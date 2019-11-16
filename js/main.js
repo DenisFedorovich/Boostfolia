@@ -194,4 +194,11 @@ $("#menu-mob").on("click", "a", function (event) {
   $('body,html').animate({scrollTop: top}, 900);
 });
 
+/*scrollmouse*/
+$(".aboutus").on("click", "a", function (event) {
+  event.preventDefault();
+  let id  = $(this).attr('href'),
+      top = $(id).offset().top + 'px';
+  $('body,html').animate({scrollTop: top}, 900);
+});
 
