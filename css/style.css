@@ -217,6 +217,8 @@ header .container .menu-mob .menu-item {
 }
 .slider .slide h2 {
   font-family: "bignoodletitling";
+  letter-spacing: 0.15em;
+  font-size: 70px;
   font-weight: 300;
   text-shadow: black 0 0 3px;
   color: #d6d5d5;
@@ -1410,6 +1412,10 @@ header .container .menu-mob .menu-item {
   text-decoration: none;
   color: #fff;
   margin: 0 auto;
+}
+.form .container form button:hover {
+  transform: scale(1.02, 1.02);
+  transition-duration: 0.3s;
 }
 .form .container form button:focus {
   outline: none;

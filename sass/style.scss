@@ -326,7 +326,8 @@ header {
 
         h2 {
             font-family: $font-family;
-            
+            letter-spacing: 0.15em;
+            font-size: 70px;
             font-weight: 300;
             text-shadow: $text-shadow; 
             color: $color;
@@ -1981,6 +1982,11 @@ header {
                 text-decoration: none;
                 color: #fff;
                 margin: 0 auto;
+
+                &:hover {
+                    transform: scale(1.02, 1.02);
+                    transition-duration: .3s;
+                }
             
                 &:focus {
                     outline: none;
